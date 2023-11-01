@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import "../assets/css/pc.css";
+import { MainBanner } from "./MainBanner";
 
 const Section = styled.div`
   width: 100%;
@@ -38,6 +39,7 @@ export const Main = () => {
           <p>서울교통공사가 도시교통의 미래를 만들어갑니다.</p>
           <MarkImg className="mainTxtLogo"></MarkImg>
         </TitleWrap>
+        <MainBanner />
         <Bg className="mainImg"></Bg>
       </SectionWrap>
     </Section>
