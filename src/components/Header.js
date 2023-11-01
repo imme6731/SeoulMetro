@@ -11,9 +11,8 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import LogoImg from "../assets/images/logo_origin.png";
 
 const SHeader = styled.header`
-  width: 100vw;
+  max-width: 1320px;
   height: auto;
-  background-color: coral;
   padding: ${pcInnerLayoutSize.padding};
 `;
 const UpperHeader = styled.div`
@@ -63,7 +62,23 @@ const SNB = styled.ul`
     color: #707070;
   }
 `;
-const LowerHeader = styled.div``;
+const LowerHeader = styled.div`
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: mintcream;
+`;
+const MenuWrap = styled.ul`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #707070;
+  font-weight: 500;
+  font-size: ${fontSize.pcMenu};
+`;
 
 export const Header = () => {
   return (
@@ -93,7 +108,16 @@ export const Header = () => {
           </li>
         </SNB>
       </UpperHeader>
-      <LowerHeader></LowerHeader>
+      <LowerHeader>
+        <MenuWrap>
+          <li>이용정보</li>
+          <li>안전환경</li>
+          <li>시민 참여</li>
+          <li>알림마당</li>
+          <li>정보공개</li>
+          <li>공사소개</li>
+        </MenuWrap>
+      </LowerHeader>
     </SHeader>
   );
 };
