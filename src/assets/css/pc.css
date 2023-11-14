@@ -13,8 +13,8 @@
 
 /*MainBanner*/
 .swiper {
-  width: 32.064%;
-  height: 52.083%;
+  width: 33.064%;
+  height: 46.083%;
   position: absolute;
   left: 54.375%;
   top: 23.81%;
@@ -23,12 +23,23 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide:nth-child(1) {
+  background: url("../images/main_slide_01.png") no-repeat center / cover;
+}
+.swiper-slide:nth-child(2) {
+  background: url("../images/main_slide_02.jpg") no-repeat center / cover;
+}
+.swiper-slide:nth-child(3) {
+  background: url("../images/main_slide_03.jpg") no-repeat center / cover;
+}
+.swiper-slide:nth-child(4) {
+  background: url("../images/main_slide_06.jpg") no-repeat center / cover;
 }
 
 .swiper-slide img {
@@ -39,4 +50,22 @@
 }
 #position {
   position: absolute;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px) !important;
+}
+
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 15px)
+  ) !important;
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 15px)
+  ) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.5) !important;
 }

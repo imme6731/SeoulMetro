@@ -14,9 +14,7 @@ export const MainBanner = () => {
   return (
     <>
       <Swiper
-        pagination={{
-          type: "fraction",
-        }}
+        pagination={{ clickable: true }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
