@@ -8,15 +8,20 @@ import "swiper/css/navigation";
 import "../assets/css/pc.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export const MainBanner = () => {
   return (
     <>
       <Swiper
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         pagination={{ clickable: true }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         id="position"
       >
