@@ -21,7 +21,8 @@ const UpperHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  /* background-color: aqua; */
+  border-bottom: 1px solid #e8e8e8;
 `;
 const LangWrap = styled.div`
   display: flex;
@@ -64,11 +65,11 @@ const SNB = styled.ul`
 `;
 const LowerHeader = styled.div`
   width: 100%;
-  padding: 15px 0;
+  padding: 18px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: mintcream;
+  /* background-color: mintcream; */
 `;
 const MenuWrap = styled.ul`
   width: 100%;

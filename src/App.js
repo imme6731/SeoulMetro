@@ -1,13 +1,12 @@
 import { styled } from "styled-components";
 import { Header } from "./components/Header";
-import Example from "./hooks/MediaQuery";
-import { pcBaseLayoutSize, pcInnerLayoutSize } from "./GlobalStyled";
-import { Main } from "./components/Main";
+import { Main } from "./components/Main/Main";
+import { Station } from "./components/Station/Station";
 
 const Wrap = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #555;
+  /* background-color: #555; */
   color: white;
   position: relative;
 `;
@@ -23,7 +22,7 @@ export const App = () => {
       <Container>
         <Header />
         <Main />
-        <Example />
+        <Station />
       </Container>
     </Wrap>
   );

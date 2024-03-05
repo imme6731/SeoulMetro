@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import "../assets/css/pc.css";
+import "../../assets/css/pc.css";
 import { MainBanner } from "./MainBanner";
 
 const Section = styled.div`
@@ -14,7 +14,7 @@ const SectionWrap = styled.div`
 const TitleWrap = styled.div`
   position: absolute;
   left: 10.417%;
-  top: 23.9%;
+  top: 240px;
   color: #1e3f5c;
   h3 {
     font-size: 50px;

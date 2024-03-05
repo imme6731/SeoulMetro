@@ -13,11 +13,11 @@
 
 /*MainBanner*/
 .swiper {
-  width: 33.064%;
-  height: 46.083%;
+  width: 620px;
+  height: 460px;
   position: absolute;
   left: 54.375%;
-  top: 23.81%;
+  top: 200px;
 }
 
 .swiper-slide {
