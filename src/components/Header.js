@@ -60,6 +60,8 @@ const SNB = styled.ul`
     margin-left: 35px;
     font-size: 26px;
     line-height: 26px;
+  }
+  a {
     color: #707070;
   }
 `;
@@ -79,6 +81,9 @@ const MenuWrap = styled.ul`
   color: #707070;
   font-weight: 500;
   font-size: ${fontSize.pcMenu};
+  a {
+    color: #707070;
+  }
 `;
 
 export const Header = () => {
@@ -95,28 +100,48 @@ export const Header = () => {
           </More>
         </LangWrap>
         <Logo>
-          <img src={LogoImg} alt="로고이미지" />
+          <a href="/">
+            <img src={LogoImg} alt="로고이미지" />
+          </a>
         </Logo>
         <SNB>
           <li>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            <a href="/">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faBars} />
+            <a href="/">
+              <FontAwesomeIcon icon={faBars} />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faUser} />
+            <a href="/">
+              <FontAwesomeIcon icon={faUser} />
+            </a>
           </li>
         </SNB>
       </UpperHeader>
       <LowerHeader>
         <MenuWrap>
-          <li>이용정보</li>
-          <li>안전환경</li>
-          <li>시민 참여</li>
-          <li>알림마당</li>
-          <li>정보공개</li>
-          <li>공사소개</li>
+          <li>
+            <a href="/">이용정보</a>
+          </li>
+          <li>
+            <a href="/">안전환경</a>
+          </li>
+          <li>
+            <a href="/">시민참여</a>
+          </li>
+          <li>
+            <a href="/">알림마당</a>
+          </li>
+          <li>
+            <a href="/">정보공개</a>
+          </li>
+          <li>
+            <a href="/">공사소개</a>
+          </li>
         </MenuWrap>
       </LowerHeader>
     </SHeader>

@@ -10,7 +10,7 @@ export const pcInnerLayoutSize = {
 };
 
 export const fontSize = {
-  pcTitle: "50px",
+  pcTitle: "40px",
   pcMenu: "18px",
   pcDesc: "16px",
 };
@@ -20,6 +20,9 @@ ${reset}
 body{
         font-family: 'Noto Sans KR', sans-serif;
         background-color: #ffff;
+        a{
+          text-decoration: none;
+        }
     }
 `;
 

@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main/Main";
 import { Station } from "./components/Station/Station";
+import { Service } from "./components/Service/Service";
+import { Notice } from "./components/Notice/Notice";
 
 const Wrap = styled.div`
   display: flex;
@@ -23,6 +25,8 @@ export const App = () => {
         <Header />
         <Main />
         <Station />
+        <Service />
+        <Notice />
       </Container>
     </Wrap>
   );

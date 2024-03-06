@@ -10,11 +10,12 @@ const SectionWrap = styled.div`
   width: 100%;
   height: 87vh;
   background-color: #888;
+  position: relative;
 `;
 const TitleWrap = styled.div`
   position: absolute;
   left: 10.417%;
-  top: 240px;
+  top: 120px;
   color: #1e3f5c;
   h3 {
     font-size: 50px;
