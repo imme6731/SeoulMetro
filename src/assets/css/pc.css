@@ -79,15 +79,6 @@
 
 /*Event*/
 
-.eventSwiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .eventBanner01 {
   background: url("../images/event01.png") no-repeat top / cover;
 }

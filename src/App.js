@@ -5,6 +5,7 @@ import { Station } from "./components/Station/Station";
 import { Service } from "./components/Service/Service";
 import { Notice } from "./components/Notice/Notice";
 import { Event } from "./components/Event/Event";
+import { Culture } from "./components/Culture/Culture";
 
 const Wrap = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ export const App = () => {
         <Service />
         <Notice />
         <Event />
+        <Culture />
       </Container>
     </Wrap>
   );
