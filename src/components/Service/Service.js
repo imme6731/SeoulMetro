@@ -62,13 +62,13 @@ const SubTitle = styled.p`
 `;
 export const Service = () => {
   const serciveArr = [
-    { id: "1", imgName: delayImg, text: "간편지연증명서" },
-    { id: "2", imgName: checkImg, text: "실시간 운행정보" },
-    { id: "3", imgName: lostItemImg, text: "유실물 찾기" },
-    { id: "4", imgName: ticketImg, text: "운임 안내" },
-    { id: "5", imgName: disabledImg, text: "교통약자 배려시설" },
-    { id: "6", imgName: vendingImg, text: "이용고객 편의시설" },
-    { id: "7", imgName: liftImg, text: "승강설비 가동현황" },
+    { id: "0", imgName: delayImg, text: "간편지연증명서" },
+    { id: "1", imgName: checkImg, text: "실시간 운행정보" },
+    { id: "2", imgName: lostItemImg, text: "유실물 찾기" },
+    { id: "3", imgName: ticketImg, text: "운임 안내" },
+    { id: "4", imgName: disabledImg, text: "교통약자 배려시설" },
+    { id: "5", imgName: vendingImg, text: "이용고객 편의시설" },
+    { id: "6", imgName: liftImg, text: "승강설비 가동현황" },
   ];
 
   return (

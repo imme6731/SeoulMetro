@@ -1,10 +1,15 @@
 import { styled } from "styled-components";
 import onlineImg from "../../assets/images/online_support.png";
 import FAQImg from "../../assets/images/FAQ.png";
+import { NoteWrap } from "./NoteWrap";
 
 const Wrap = styled.div`
   width: 100%;
   margin-bottom: 200px;
+  color: #121212;
+  a {
+    color: #121212;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -16,7 +21,7 @@ const Container = styled.div`
 `;
 const Title = styled.h2`
   font-size: 40px;
-  color: #121212;
+
   font-weight: 500;
   b {
     font-weight: 700;
@@ -28,17 +33,11 @@ const ConWrap = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const Note = styled.div`
-  width: 70%;
-  max-width: 1300px;
-  height: 500px;
-  border: 1px solid #e8e8e8;
-  border-radius: 40px;
-`;
+
 const BtnWrap = styled.ul`
   width: 25%;
   max-width: 330px;
-  height: 500px;
+
   border: 1px solid #e8e8e8;
   border-radius: 40px;
   img {
@@ -71,7 +70,7 @@ export const Notice = () => {
           서울교통공사 <b>소식</b>
         </Title>
         <ConWrap>
-          <Note></Note>
+          <NoteWrap />
           <BtnWrap>
             <li>
               <a href="/">

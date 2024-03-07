@@ -69,3 +69,10 @@
   ) !important;
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.5) !important;
 }
+
+/*Service*/
+
+.isActive {
+  border-bottom: 2px solid #121212;
+  font-weight: 700;
+}
