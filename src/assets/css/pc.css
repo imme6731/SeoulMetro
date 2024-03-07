@@ -12,7 +12,7 @@
 }
 
 /*MainBanner*/
-.swiper {
+.mainSwiper {
   width: 620px;
   height: 460px;
   position: absolute;
@@ -20,7 +20,7 @@
   top: 130px;
 }
 
-.swiper-slide {
+.mainSwiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -29,16 +29,16 @@
   align-items: center;
 }
 
-.swiper-slide:nth-child(1) {
+.mainbanner01 {
   background: url("../images/main_slide_01.png") no-repeat center / cover;
 }
-.swiper-slide:nth-child(2) {
+.mainbanner02 {
   background: url("../images/main_slide_02.jpg") no-repeat center / cover;
 }
-.swiper-slide:nth-child(3) {
+.mainbanner03 {
   background: url("../images/main_slide_03.jpg") no-repeat center / cover;
 }
-.swiper-slide:nth-child(4) {
+.mainbanner04 {
   background: url("../images/main_slide_06.jpg") no-repeat center / cover;
 }
 
@@ -75,4 +75,28 @@
 .isActive {
   border-bottom: 2px solid #121212;
   font-weight: 700;
+}
+
+/*Event*/
+
+.eventSwiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventBanner01 {
+  background: url("../images/event01.png") no-repeat top / cover;
+}
+.eventBanner02 {
+  background: url("../images/event02.png") no-repeat top / cover;
+}
+.eventBanner03 {
+  background: url("../images/event03.jpg") no-repeat top / cover;
+}
+.eventBanner04 {
+  background: url("../images/event04.jpg") no-repeat top / cover;
 }

@@ -19,13 +19,13 @@ export const MainBanner = () => {
         pagination={{ clickable: true }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mainSwiper mainSwiper-slide "
         id="position"
       >
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide className="mainbanner01"></SwiperSlide>
+        <SwiperSlide className="mainbanner02"></SwiperSlide>
+        <SwiperSlide className="mainbanner03"></SwiperSlide>
+        <SwiperSlide className="mainbanner04"></SwiperSlide>
       </Swiper>
     </>
   );

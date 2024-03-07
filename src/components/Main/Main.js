@@ -4,11 +4,11 @@ import { MainBanner } from "./MainBanner";
 
 const Section = styled.div`
   width: 100%;
-  height: 87vh;
+  height: 870px;
 `;
 const SectionWrap = styled.div`
   width: 100%;
-  height: 87vh;
+  height: 870px;
   background-color: #888;
   position: relative;
 `;

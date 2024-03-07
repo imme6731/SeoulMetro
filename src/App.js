@@ -4,6 +4,7 @@ import { Main } from "./components/Main/Main";
 import { Station } from "./components/Station/Station";
 import { Service } from "./components/Service/Service";
 import { Notice } from "./components/Notice/Notice";
+import { Event } from "./components/Event/Event";
 
 const Wrap = styled.div`
   display: flex;
@@ -27,6 +28,7 @@ export const App = () => {
         <Station />
         <Service />
         <Notice />
+        <Event />
       </Container>
     </Wrap>
   );
