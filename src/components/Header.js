@@ -11,8 +11,6 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import LogoImg from "../assets/images/logo_origin.png";
 
 const SHeader = styled.header`
-  max-width: 1320px;
-  height: auto;
   padding: ${pcInnerLayoutSize.padding};
 `;
 const UpperHeader = styled.div`

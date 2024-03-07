@@ -6,6 +6,7 @@ import { Service } from "./components/Service/Service";
 import { Notice } from "./components/Notice/Notice";
 import { Event } from "./components/Event/Event";
 import { Culture } from "./components/Culture/Culture";
+import { Footer } from "./components/Footer";
 
 const Wrap = styled.div`
   display: flex;
@@ -16,7 +17,6 @@ const Wrap = styled.div`
 `;
 
 const Container = styled.div`
-  max-width: 1920px;
   width: 100%;
 `;
 
@@ -25,12 +25,15 @@ export const App = () => {
     <Wrap>
       <Container>
         <Header />
+
         <Main />
         <Station />
         <Service />
         <Notice />
         <Event />
         <Culture />
+
+        <Footer />
       </Container>
     </Wrap>
   );
