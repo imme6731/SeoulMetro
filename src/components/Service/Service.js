@@ -61,6 +61,16 @@ const SubTitle = styled.p`
   color: #121212;
 `;
 export const Service = () => {
+  const serciveArr = [
+    { id: "1", imgName: delayImg, text: "간편지연증명서" },
+    { id: "2", imgName: checkImg, text: "실시간 운행정보" },
+    { id: "3", imgName: lostItemImg, text: "유실물 찾기" },
+    { id: "4", imgName: ticketImg, text: "운임 안내" },
+    { id: "5", imgName: disabledImg, text: "교통약자 배려시설" },
+    { id: "6", imgName: vendingImg, text: "이용고객 편의시설" },
+    { id: "7", imgName: liftImg, text: "승강설비 가동현황" },
+  ];
+
   return (
     <Wrap>
       <Container>
@@ -68,62 +78,16 @@ export const Service = () => {
           서울교통공사 <b>서비스</b>
         </Title>
         <ConWrap>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={delayImg} alt="간편지연증명서" />
-              </ImgCon>
-              <SubTitle>간편지연증명서</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={checkImg} alt="실시간운행정보" />
-              </ImgCon>
-              <SubTitle>실시간 운행정보</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={lostItemImg} alt="유실물찾기" />
-              </ImgCon>
-              <SubTitle>유실물 찾기</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={ticketImg} alt="운임안내" />
-              </ImgCon>
-              <SubTitle>운임 안내</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={disabledImg} alt="교통약자배려시설" />
-              </ImgCon>
-              <SubTitle>교통약자 배려시설</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={vendingImg} alt="이용고객편의시설" />
-              </ImgCon>
-              <SubTitle>이용고객 편의시설</SubTitle>
-            </a>
-          </Con>
-          <Con>
-            <a href="/">
-              <ImgCon>
-                <img src={liftImg} alt="승강설비가동현황" />
-              </ImgCon>
-              <SubTitle>승강설비 가동현황</SubTitle>
-            </a>
-          </Con>
+          {serciveArr.map((ser) => (
+            <Con key={ser.id}>
+              <a href="/">
+                <ImgCon>
+                  <img src={ser.imgName} alt={ser.text} />
+                </ImgCon>
+                <SubTitle>{ser.text}</SubTitle>
+              </a>
+            </Con>
+          ))}
         </ConWrap>
       </Container>
     </Wrap>
