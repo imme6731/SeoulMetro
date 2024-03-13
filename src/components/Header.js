@@ -12,6 +12,13 @@ import LogoImg from "../assets/images/logo_origin.png";
 
 const SHeader = styled.header`
   padding: ${pcInnerLayoutSize.padding};
+
+  @media screen and (max-width: 1460px) {
+    padding: 0 200px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 25px;
+  }
 `;
 const UpperHeader = styled.div`
   width: 100%;
@@ -21,6 +28,10 @@ const UpperHeader = styled.div`
   align-items: center;
   /* background-color: aqua; */
   border-bottom: 1px solid #e8e8e8;
+  @media screen and (max-width: 1024px) {
+    border-bottom: none;
+    padding: 20px 0;
+  }
 `;
 const LangWrap = styled.div`
   display: flex;
@@ -32,13 +43,22 @@ const LangBtn = styled.div`
   height: 26px;
   font-size: 26px;
   margin-right: 10px;
+  @media screen and (max-width: 1024px) {
+    margin-right: 0;
+  }
 `;
 const Lang = styled.p`
   font-size: ${fontSize.pcDesc};
   margin-right: 8px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 const More = styled.div`
   font-size: 18px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 const Logo = styled.div`
   width: 147px;
@@ -47,6 +67,10 @@ const Logo = styled.div`
     width: 100%;
     height: 100%;
     align-items: center;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 123px;
+    height: 36px;
   }
 `;
 const SNB = styled.ul`
@@ -58,6 +82,15 @@ const SNB = styled.ul`
     margin-left: 35px;
     font-size: 26px;
     line-height: 26px;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 24px;
+      height: 24px;
+      margin-left: 20px;
+    }
   }
   a {
     color: #707070;
@@ -70,6 +103,9 @@ const LowerHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   /* background-color: mintcream; */
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 const MenuWrap = styled.ul`
   width: 100%;

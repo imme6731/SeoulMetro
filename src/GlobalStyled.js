@@ -23,6 +23,7 @@ body{
         a{
           text-decoration: none;
         }
+        overflow-x: hidden;
     }
 `;
 

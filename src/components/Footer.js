@@ -13,9 +13,19 @@ const SFooter = styled.footer`
 `;
 const UpperFooter = styled.div`
   border-bottom: 0.5px solid #fff;
-  padding: 60px 250px;
+  padding: 60px 200px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1460px) {
+    padding: 60px 150px;
+  }
+  @media screen and (max-width: 1320px) {
+    padding: 60px 80px;
+  }
+  @media screen and (max-width: 1160px) {
+    padding: 40px 25px;
+  }
 `;
 const ListFooter = styled.ul`
   display: flex;
@@ -34,6 +44,20 @@ const ListFooter = styled.ul`
       margin-right: 0;
     }
   }
+
+  @media screen and (max-width: 1460px) {
+    li {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (max-width: 1160px) {
+    li {
+      font-size: 14px;
+      &:first-child {
+        font-size: 16px;
+      }
+    }
+  }
 `;
 const DownList = styled.div`
   display: flex;
@@ -46,7 +70,17 @@ const DownList = styled.div`
 const LowerFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 60px 250px;
+  padding: 60px 200px;
+
+  @media screen and (max-width: 1460px) {
+    padding: 60px 150px;
+  }
+  @media screen and (max-width: 1320px) {
+    padding: 60px 80px;
+  }
+  @media screen and (max-width: 1160px) {
+    padding: 40px 25px;
+  }
 `;
 const InfoWrap = styled.div`
   h3 {

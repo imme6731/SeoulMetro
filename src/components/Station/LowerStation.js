@@ -14,11 +14,21 @@ const SLowerStation = styled.div`
   justify-content: space-between;
   padding: 0 100px;
   box-shadow: 0px 0px 10px #989898;
+  @media screen and (max-width: 1460px) {
+    padding: 0 40px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 416px;
+    flex-direction: column;
+    justify-content: unset;
+    padding: 60px 0;
+  }
 `;
 
-const RightMenu = styled.div`
+const LeftMenu = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50%;
   img {
     width: 128px;
@@ -28,6 +38,17 @@ const RightMenu = styled.div`
     font-size: 36px;
     font-weight: 500;
     color: #121212;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-bottom: 100px;
+    img {
+      width: 110px;
+      margin-right: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
   }
 `;
 const StationBtn = styled.div`
@@ -48,17 +69,31 @@ const Button = styled.div`
   margin-top: 20px;
   font-size: 16px;
   font-weight: 500;
+
+  @media screen and (max-width: 1024px) {
+    height: 54px;
+    border-radius: 27px;
+    line-height: 54px;
+  }
 `;
-const LeftMenu = styled.div`
+const RightMenu = styled.div`
   width: 50%;
   color: #121212;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h2 {
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    h2 {
+      margin-bottom: 35px;
+    }
   }
 `;
 const MenuBtn = styled.div`
@@ -83,12 +118,20 @@ const MenuBtn = styled.div`
     width: 60px;
     margin-right: 25px;
   }
+
+  @media screen and (max-width: 1024px) {
+    ul {
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
 `;
 
 export const LowerStation = () => {
   return (
     <SLowerStation>
-      <RightMenu>
+      <LeftMenu>
         <img src={cyberImg} alt="사이버스테이션" />
         <StationBtn>
           <a href="/">
@@ -96,8 +139,8 @@ export const LowerStation = () => {
             <Button>바로가기</Button>
           </a>
         </StationBtn>
-      </RightMenu>
-      <LeftMenu>
+      </LeftMenu>
+      <RightMenu>
         <h2>관련 메뉴</h2>
         <MenuBtn>
           <ul>
@@ -129,7 +172,7 @@ export const LowerStation = () => {
             </li>
           </ul>
         </MenuBtn>
-      </LeftMenu>
+      </RightMenu>
     </SLowerStation>
   );
 };

@@ -14,6 +14,16 @@ const UpperStation = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+  @media screen and (max-width: 1460px) {
+    padding: 0 60px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 224px;
+    flex-direction: column;
+    justify-content: unset;
+    padding: 0;
+    background-color: #6e90ae;
+  }
 `;
 const SubwaySel = styled.div`
   width: 70%;
@@ -25,30 +35,55 @@ const SubwaySel = styled.div`
     margin-left: 15px;
     line-height: 28px;
   }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 const Dept = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    padding: 22px 40px;
+    border-bottom: 0.5px solid #95a7b7;
+    box-sizing: border-box;
+  }
 `;
 const Arri = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    padding: 22px 40px;
+  }
 `;
 const Arrow = styled.div`
   font-size: 24px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 const SearchStation = styled.div`
   font-size: 24px;
-  p {
-    font-size: 18px;
-    margin-left: 15px;
-    line-height: 24px;
-  }
+
   a {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    p {
+      font-size: 18px;
+      margin-left: 15px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    background-color: #1e3f5c;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

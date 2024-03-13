@@ -14,6 +14,12 @@ const SNoteWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 30px;
+  }
 `;
 const MenuWrap = styled.div`
   padding: 0 50px;
@@ -26,12 +32,23 @@ const Menus = styled.ul`
   display: flex;
   font-size: 20px;
   line-height: 40px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 const Menu = styled.li`
   width: 125px;
   text-align: center;
   border-right: 1px solid #e8e8e8;
+  box-sizing: border-box;
   cursor: pointer;
+  &:last-child {
+    border-right: none;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 110px;
+  }
 `;
 
 const MoreBtn = styled.div`
@@ -68,6 +85,10 @@ const Text = styled.div`
     justify-content: space-between;
   }
   font-size: 18px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 const SubTitle = styled.p`
   width: 100%;
@@ -79,8 +100,17 @@ const SubTitle = styled.p`
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+
+  @media screen and (max-width: 1460px) {
+    max-width: 400px;
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: 300px;
+  }
 `;
-const Date = styled.p``;
+const Date = styled.p`
+  color: #707070;
+`;
 
 export const NoteWrap = () => {
   const [currentTab, clickTab] = useState(0);

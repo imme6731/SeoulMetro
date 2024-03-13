@@ -10,6 +10,10 @@ import liftImg from "../../assets/images/lift.png";
 const Wrap = styled.div`
   width: 100%;
   margin-bottom: 200px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 150px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -18,6 +22,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 1460px) {
+    width: auto;
+    max-width: none;
+    padding: 0 80px;
+  }
 `;
 const Title = styled.h2`
   font-size: 40px;
@@ -27,11 +36,23 @@ const Title = styled.h2`
     font-weight: 700;
   }
   margin-bottom: 80px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 36px;
+    margin-bottom: 65px;
+  }
 `;
 const ConWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1460px) {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 60px;
+  }
 `;
 const Con = styled.div`
   width: 160px;
@@ -41,6 +62,10 @@ const Con = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 140px;
   }
 `;
 const ImgCon = styled.div`
@@ -54,6 +79,14 @@ const ImgCon = styled.div`
   margin-bottom: 20px;
   img {
     width: 70px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 140px;
+    border-radius: 36px;
+    img {
+      width: 60px;
+    }
   }
 `;
 const SubTitle = styled.p`

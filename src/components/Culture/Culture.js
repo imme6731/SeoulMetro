@@ -12,6 +12,10 @@ const Wrap = styled.div`
   a {
     color: #121212;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 150px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -20,18 +24,37 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 1460px) {
+    width: auto;
+    max-width: none;
+    padding: 0 80px;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 80px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 36px;
+    margin-bottom: 65px;
+  }
 `;
 
 const ConWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1460px) {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 60px;
+  }
 `;
 const Con = styled.div`
   width: 260px;
@@ -43,15 +66,30 @@ const Con = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 240px;
+    padding: 40px 0;
+  }
 `;
 const Img = styled.img`
   width: 120px;
   margin-bottom: 45px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100px;
+    margin-bottom: 40px;
+  }
 `;
 const SubTitle = styled.h3`
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 `;
 const Desc = styled.p`
   max-width: 180px;
@@ -60,6 +98,12 @@ const Desc = styled.p`
   text-align: center;
   word-break: keep-all;
   line-height: 26px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 export const Culture = () => {

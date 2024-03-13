@@ -21,11 +21,32 @@ const TitleWrap = styled.div`
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 72px;
   }
   p {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 40px;
+    line-height: 36px;
+  }
+  @media screen and (max-width: 1460px) {
+    top: 100px;
+    h3 {
+      font-size: 46px;
+      line-height: 60px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h3 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 25px;
+      line-height: 30px;
+    }
   }
 `;
 const MarkImg = styled.div``;

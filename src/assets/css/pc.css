@@ -16,14 +16,30 @@
   width: 620px;
   height: 460px;
   position: absolute;
-  left: 54.375%;
-  top: 130px;
+  right: 10.417%;
+  top: 190px;
+}
+@media screen and (max-width: 1460px) {
+  .mainSwiper {
+    width: 520px;
+    height: 400px;
+    top: 220px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainSwiper {
+    width: 490px;
+    height: 364px;
+    top: 350px;
+  }
+  .mainTxtLogo {
+    width: 147px;
+    height: 24px;
+  }
 }
 
 .mainSwiper-slide {
   text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
