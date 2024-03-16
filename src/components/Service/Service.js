@@ -14,6 +14,9 @@ const Wrap = styled.div`
   @media screen and (max-width: 1024px) {
     margin-bottom: 150px;
   }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 100px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -26,6 +29,9 @@ const Container = styled.div`
     width: auto;
     max-width: none;
     padding: 0 80px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 20px;
   }
 `;
 const Title = styled.h2`
@@ -41,6 +47,10 @@ const Title = styled.h2`
     font-size: 36px;
     margin-bottom: 65px;
   }
+  @media screen and (max-width: 425px) {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 `;
 const ConWrap = styled.div`
   width: 100%;
@@ -52,6 +62,10 @@ const ConWrap = styled.div`
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 60px;
+  }
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
   }
 `;
 const Con = styled.div`
@@ -66,6 +80,12 @@ const Con = styled.div`
 
   @media screen and (max-width: 1024px) {
     width: 140px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100px;
+    &:last-child {
+      display: none;
+    }
   }
 `;
 const ImgCon = styled.div`
@@ -88,10 +108,23 @@ const ImgCon = styled.div`
       width: 60px;
     }
   }
+  @media screen and (max-width: 425px) {
+    height: 100px;
+    border-radius: 20px;
+    img {
+      width: 50px;
+    }
+  }
 `;
 const SubTitle = styled.p`
   font-size: 16px;
   color: #121212;
+  text-align: center;
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+    line-height: 18px;
+    word-break: keep-all;
+  }
 `;
 export const Service = () => {
   const serciveArr = [

@@ -20,6 +20,10 @@ const SNoteWrap = styled.div`
     max-width: none;
     margin-bottom: 30px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 25px 0;
+    margin-bottom: 25px;
+  }
 `;
 const MenuWrap = styled.div`
   padding: 0 50px;
@@ -27,6 +31,11 @@ const MenuWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
+  @media screen and (max-width: 425px) {
+    padding: unset;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 `;
 const Menus = styled.ul`
   display: flex;
@@ -35,6 +44,11 @@ const Menus = styled.ul`
 
   @media screen and (max-width: 1024px) {
     font-size: 18px;
+    line-height: 38px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+    line-height: 34px;
   }
 `;
 const Menu = styled.li`
@@ -49,15 +63,26 @@ const Menu = styled.li`
   @media screen and (max-width: 1024px) {
     width: 110px;
   }
+  @media screen and (max-width: 425px) {
+    width: 88px;
+  }
 `;
 
 const MoreBtn = styled.div`
   font-size: 22px;
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 const ListWrap = styled.div`
   padding: 0 50px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 425px) {
+    padding: 0 20px;
+  }
 `;
 const List = styled.div`
   display: flex;
@@ -77,6 +102,15 @@ const Mark = styled.div`
   line-height: 40px;
   font-size: 16px;
   margin-right: 40px;
+
+  @media screen and (max-width: 425px) {
+    width: 55px;
+    height: 35px;
+    border-radius: 18px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-right: 15px;
+  }
 `;
 const Text = styled.div`
   width: 100%;
@@ -88,6 +122,9 @@ const Text = styled.div`
 
   @media screen and (max-width: 1024px) {
     font-size: 16px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
   }
 `;
 const SubTitle = styled.p`
@@ -107,9 +144,16 @@ const SubTitle = styled.p`
   @media screen and (max-width: 1200px) {
     max-width: 300px;
   }
+  @media screen and (max-width: 425px) {
+    max-width: 270px;
+  }
 `;
 const Date = styled.p`
   color: #707070;
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const NoteWrap = () => {

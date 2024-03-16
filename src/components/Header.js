@@ -19,6 +19,9 @@ const SHeader = styled.header`
   @media screen and (max-width: 1024px) {
     padding: 0 25px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 20px;
+  }
 `;
 const UpperHeader = styled.div`
   width: 100%;
@@ -72,6 +75,10 @@ const Logo = styled.div`
     width: 123px;
     height: 36px;
   }
+  @media screen and (max-width: 425px) {
+    width: 100px;
+    height: 30px;
+  }
 `;
 const SNB = styled.ul`
   display: flex;
@@ -90,6 +97,12 @@ const SNB = styled.ul`
       width: 24px;
       height: 24px;
       margin-left: 20px;
+    }
+    @media screen and (max-width: 425px) {
+      &:nth-child(1),
+      &:nth-child(3) {
+        display: none;
+      }
     }
   }
   a {

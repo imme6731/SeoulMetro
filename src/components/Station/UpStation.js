@@ -24,6 +24,9 @@ const UpperStation = styled.div`
     padding: 0;
     background-color: #6e90ae;
   }
+  @media screen and (max-width: 425px) {
+    height: 200px;
+  }
 `;
 const SubwaySel = styled.div`
   width: 70%;
@@ -39,6 +42,12 @@ const SubwaySel = styled.div`
     width: 100%;
     flex-direction: column;
   }
+  @media screen and (max-width: 425px) {
+    p {
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  }
 `;
 const Dept = styled.div`
   display: flex;
@@ -48,12 +57,18 @@ const Dept = styled.div`
     border-bottom: 0.5px solid #95a7b7;
     box-sizing: border-box;
   }
+  @media screen and (max-width: 425px) {
+    padding: 20px 40px;
+  }
 `;
 const Arri = styled.div`
   display: flex;
   align-items: center;
   @media screen and (max-width: 1024px) {
     padding: 22px 40px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 20px 40px;
   }
 `;
 const Arrow = styled.div`
@@ -84,6 +99,9 @@ const SearchStation = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @media screen and (max-width: 425px) {
+    height: 64px;
   }
 `;
 

@@ -16,6 +16,10 @@ const Wrap = styled.div`
   @media screen and (max-width: 1024px) {
     margin-bottom: 150px;
   }
+
+  @media screen and (max-width: 425px) {
+    margin-bottom: 100px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -30,6 +34,9 @@ const Container = styled.div`
     max-width: none;
     padding: 0 80px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 20px;
+  }
 `;
 
 const Title = styled.h2`
@@ -40,6 +47,10 @@ const Title = styled.h2`
   @media screen and (max-width: 1024px) {
     font-size: 36px;
     margin-bottom: 65px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -54,6 +65,11 @@ const ConWrap = styled.div`
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 60px;
+  }
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
   }
 `;
 const Con = styled.div`
@@ -71,6 +87,13 @@ const Con = styled.div`
     width: 240px;
     padding: 40px 0;
   }
+  @media screen and (max-width: 425px) {
+    width: 160px;
+    padding: 30px 0;
+    &:last-child {
+      display: none;
+    }
+  }
 `;
 const Img = styled.img`
   width: 120px;
@@ -79,6 +102,10 @@ const Img = styled.img`
   @media screen and (max-width: 1024px) {
     width: 100px;
     margin-bottom: 40px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 70px;
+    margin-bottom: 20px;
   }
 `;
 const SubTitle = styled.h3`
@@ -89,6 +116,10 @@ const SubTitle = styled.h3`
   @media screen and (max-width: 1024px) {
     font-size: 18px;
     margin-bottom: 15px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+    margin-bottom: unset;
   }
 `;
 const Desc = styled.p`
@@ -103,6 +134,9 @@ const Desc = styled.p`
     max-width: 160px;
     font-size: 16px;
     line-height: 24px;
+  }
+  @media screen and (max-width: 425px) {
+    display: none;
   }
 `;
 

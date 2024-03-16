@@ -26,6 +26,9 @@ const UpperFooter = styled.div`
   @media screen and (max-width: 1160px) {
     padding: 40px 25px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 40px 20px;
+  }
 `;
 const ListFooter = styled.ul`
   display: flex;
@@ -58,12 +61,25 @@ const ListFooter = styled.ul`
       }
     }
   }
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
 `;
 const DownList = styled.div`
   display: flex;
   font-size: 16px;
   p {
     margin-right: 15px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
   }
 `;
 
@@ -81,6 +97,10 @@ const LowerFooter = styled.div`
   @media screen and (max-width: 1160px) {
     padding: 40px 25px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
 `;
 const InfoWrap = styled.div`
   h3 {
@@ -93,21 +113,53 @@ const InfoWrap = styled.div`
     color: #d0d0d0;
     margin-bottom: 40px;
   }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
 `;
 const Txt = styled.h4`
   font-size: 15px;
+  line-height: 25px;
   color: #d0d0d0;
   margin-bottom: 20px;
+  br {
+    display: none;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    br {
+      display: block;
+    }
+  }
 `;
-const Copyright = styled.div`
+const Copyright = styled.p`
   color: #d0d0d0;
   font-size: 15px;
   font-weight: 300;
+
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+  }
 `;
 const SNSWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media screen and (max-width: 425px) {
+    align-items: flex-start;
+  }
 `;
 const SNSList = styled.ul`
   display: flex;
@@ -116,6 +168,16 @@ const SNSList = styled.ul`
     a > img {
       width: 35px;
       margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 30px;
+    li {
+      a > img {
+        width: 30px;
+        margin-left: unset;
+        margin-right: 20px;
+      }
     }
   }
 `;
@@ -147,7 +209,8 @@ export const Footer = () => {
           <h3>대표전화 1577-1234</h3>
           <p>04806 서울특별시 성동구 천호대로 346</p>
           <Txt>
-            청렴한 오늘의 당신이 발전하는 내일의 서울교통공사를 만들어갑니다.
+            청렴한 오늘의 당신이 발전하는 <br />
+            내일의 서울교통공사를 만들어갑니다.
           </Txt>
           <Copyright>Copyright 2024. imme6731 All right reserved.</Copyright>
         </InfoWrap>

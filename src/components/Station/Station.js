@@ -14,6 +14,11 @@ const Wrap = styled.div`
     margin-top: 50px;
     margin-bottom: 150px;
   }
+  @media screen and (max-width: 425px) {
+    height: 585px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -27,8 +32,9 @@ const Container = styled.div`
   }
   @media screen and (max-width: 1024px) {
     padding: 0 25px;
-    max-width: 960px;
     top: 0;
+    width: 90%;
+    max-width: none;
   }
 `;
 

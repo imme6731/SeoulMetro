@@ -23,6 +23,10 @@ const SLowerStation = styled.div`
     justify-content: unset;
     padding: 60px 0;
   }
+  @media screen and (max-width: 425px) {
+    height: 275px;
+    padding: 55px 0;
+  }
 `;
 
 const LeftMenu = styled.div`
@@ -50,6 +54,16 @@ const LeftMenu = styled.div`
       font-size: 30px;
     }
   }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 55px;
+    img {
+      width: 80px;
+      margin-right: 15px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
 `;
 const StationBtn = styled.div`
   a {
@@ -75,6 +89,12 @@ const Button = styled.div`
     border-radius: 27px;
     line-height: 54px;
   }
+  @media screen and (max-width: 425px) {
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+  }
 `;
 const RightMenu = styled.div`
   width: 50%;
@@ -93,6 +113,12 @@ const RightMenu = styled.div`
     width: 100%;
     h2 {
       margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 25px;
     }
   }
 `;
@@ -123,6 +149,22 @@ const MenuBtn = styled.div`
     ul {
       &:first-child {
         margin-right: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    img {
+      width: 35px;
+      margin-right: 15px;
+    }
+    p {
+      font-size: 14px;
+    }
+    ul {
+      li {
+        &:first-child {
+          margin-bottom: 20px;
+        }
       }
     }
   }

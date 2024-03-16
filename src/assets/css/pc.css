@@ -37,6 +37,33 @@
     height: 24px;
   }
 }
+@media screen and (max-width: 768px) {
+  .mainSwiper {
+    width: 400px;
+    height: 300px;
+    top: 400px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainSwiper {
+    width: 300px;
+    height: 200px;
+    top: 250px;
+    border-radius: 13px;
+    right: unset;
+    left: 50%;
+    margin-left: -150px !important;
+  }
+  .mainTxtLogo {
+    width: 90px;
+    height: 15px;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 26px !important;
+  }
+}
 
 .mainSwiper-slide {
   text-align: center;

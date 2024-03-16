@@ -14,6 +14,9 @@ const Wrap = styled.div`
   @media screen and (max-width: 1024px) {
     margin-bottom: 150px;
   }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 100px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -28,6 +31,9 @@ const Container = styled.div`
     max-width: none;
     padding: 0 80px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 20px;
+  }
 `;
 const Title = styled.h2`
   font-size: 40px;
@@ -41,6 +47,10 @@ const Title = styled.h2`
   @media screen and (max-width: 1024px) {
     font-size: 36px;
     margin-bottom: 65px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 `;
 const ConWrap = styled.div`
@@ -91,6 +101,21 @@ const BtnWrap = styled.ul`
     & li:first-child {
       border-right: 1px solid #e8e8e8;
       border-bottom: none;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    padding: 30px 0;
+    img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+    li {
+      p {
+        font-size: 14px;
+      }
     }
   }
 `;
