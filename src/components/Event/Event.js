@@ -52,7 +52,7 @@ const ConWrap = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 740px) {
     flex-direction: column;
     align-items: center;
   }
@@ -81,6 +81,20 @@ const Con = styled.div`
     }
     width: 350px;
   }
+  @media screen and (max-width: 920px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 840px) {
+    width: 270px;
+  }
+  @media screen and (max-width: 740px) {
+    &:last-child {
+      display: block;
+      margin-bottom: 0;
+    }
+    width: 320px;
+    margin-bottom: 60px;
+  }
   @media screen and (max-width: 425px) {
     &:last-child {
       display: block;
@@ -107,6 +121,15 @@ const Bg = styled.div`
   }
   @media screen and (max-width: 1024px) {
     height: 340px;
+  }
+  @media screen and (max-width: 920px) {
+    height: 290px;
+  }
+  @media screen and (max-width: 840px) {
+    height: 260px;
+  }
+  @media screen and (max-width: 740px) {
+    height: 310px;
   }
   @media screen and (max-width: 425px) {
     height: 260px;

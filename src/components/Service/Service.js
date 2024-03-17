@@ -30,6 +30,9 @@ const Container = styled.div`
     max-width: none;
     padding: 0 80px;
   }
+  @media screen and (max-width: 1024px) {
+    padding: 0 25px;
+  }
   @media screen and (max-width: 425px) {
     padding: 0 20px;
   }
@@ -63,6 +66,9 @@ const ConWrap = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 60px;
   }
+  @media screen and (max-width: 780px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   @media screen and (max-width: 425px) {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 24px;
@@ -81,11 +87,16 @@ const Con = styled.div`
   @media screen and (max-width: 1024px) {
     width: 140px;
   }
-  @media screen and (max-width: 425px) {
-    width: 100px;
+  @media screen and (max-width: 780px) {
     &:last-child {
       display: none;
     }
+  }
+  @media screen and (max-width: 520px) {
+    width: 120px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100px;
   }
 `;
 const ImgCon = styled.div`
@@ -106,6 +117,12 @@ const ImgCon = styled.div`
     border-radius: 36px;
     img {
       width: 60px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    height: 120px;
+    img {
+      width: 55px;
     }
   }
   @media screen and (max-width: 425px) {

@@ -61,14 +61,21 @@ const ListFooter = styled.ul`
       }
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
     li {
-      margin-bottom: 15px;
+      font-size: 16px;
+      margin-bottom: 20px;
       &:last-child {
         margin-bottom: unset;
       }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    li {
+      font-size: 14px;
+      margin-bottom: 15px;
     }
   }
 `;
@@ -97,9 +104,11 @@ const LowerFooter = styled.div`
   @media screen and (max-width: 1160px) {
     padding: 40px 25px;
   }
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 425px) {
     padding: 40px 20px;
-    flex-direction: column;
   }
 `;
 const InfoWrap = styled.div`
@@ -157,7 +166,7 @@ const SNSWrap = styled.div`
   flex-direction: column;
   align-items: flex-end;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 720px) {
     align-items: flex-start;
   }
 `;
@@ -170,12 +179,19 @@ const SNSList = styled.ul`
       margin-left: 20px;
     }
   }
+  @media screen and (max-width: 720px) {
+    li {
+      a > img {
+        margin-left: unset;
+        margin-right: 25px;
+      }
+    }
+  }
   @media screen and (max-width: 425px) {
     margin-bottom: 30px;
     li {
       a > img {
         width: 30px;
-        margin-left: unset;
         margin-right: 20px;
       }
     }

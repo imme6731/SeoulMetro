@@ -34,6 +34,9 @@ const Container = styled.div`
     max-width: none;
     padding: 0 80px;
   }
+  @media screen and (max-width: 1024px) {
+    padding: 0 25px;
+  }
   @media screen and (max-width: 425px) {
     padding: 0 20px;
   }
@@ -48,6 +51,7 @@ const Title = styled.h2`
     font-size: 36px;
     margin-bottom: 65px;
   }
+
   @media screen and (max-width: 425px) {
     font-size: 24px;
     margin-bottom: 40px;
@@ -66,7 +70,7 @@ const ConWrap = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 60px;
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
@@ -87,11 +91,21 @@ const Con = styled.div`
     width: 240px;
     padding: 40px 0;
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 960px) {
+    width: 200px;
+    padding: 40px 0;
+  }
+  @media screen and (max-width: 840px) {
     width: 160px;
     padding: 30px 0;
+  }
+  @media screen and (max-width: 700px) {
+    width: 180px;
     &:last-child {
       display: none;
+    }
+    @media screen and (max-width: 425px) {
+      width: 160px;
     }
   }
 `;
@@ -102,6 +116,10 @@ const Img = styled.img`
   @media screen and (max-width: 1024px) {
     width: 100px;
     margin-bottom: 40px;
+  }
+  @media screen and (max-width: 840px) {
+    width: 80px;
+    margin-bottom: 30px;
   }
   @media screen and (max-width: 425px) {
     width: 70px;
@@ -115,6 +133,10 @@ const SubTitle = styled.h3`
 
   @media screen and (max-width: 1024px) {
     font-size: 18px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 840px) {
+    font-size: 16px;
     margin-bottom: 15px;
   }
   @media screen and (max-width: 425px) {
@@ -134,6 +156,11 @@ const Desc = styled.p`
     max-width: 160px;
     font-size: 16px;
     line-height: 24px;
+  }
+  @media screen and (max-width: 840px) {
+    max-width: 140px;
+    font-size: 14px;
+    line-height: 22px;
   }
   @media screen and (max-width: 425px) {
     display: none;

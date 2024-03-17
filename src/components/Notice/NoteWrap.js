@@ -71,7 +71,7 @@ const Menu = styled.li`
 const MoreBtn = styled.div`
   font-size: 22px;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 520px) {
     display: none;
   }
 `;
@@ -151,7 +151,7 @@ const SubTitle = styled.p`
 const Date = styled.p`
   color: #707070;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
